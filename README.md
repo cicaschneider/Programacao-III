@@ -24,9 +24,10 @@ O sistema conta com dois módulos principais:
 - Bootstrap (ou Tailwind, se preferir)
 - Git
 
-## 🔧 Como Executar o Projeto
+## 👨‍💻 Integrantes do Grupo
 
-1. Clone o repositório:
-   ```bash
-   git clone https://github.com/seu-usuario/seu-repositorio.git
-   cd seu-repositorio
+- Nome Completo	         Matrícula
+- Kauan A. Cipriani	      202100111
+- Maria Cecilia	         202100222
+- Vitor H. Konzen	         202100333
+- Guilher Depiné
