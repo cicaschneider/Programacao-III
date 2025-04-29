@@ -37,8 +37,7 @@ O sistema conta com dois módulos principais:
 
 ## 👨‍💻 Integrantes do Grupo
 
-- Nome Completo	         Matrícula
-- Kauan A. Cipriani	      415307
-- Maria Cecilia	         417261
-- Vitor H. Konzen	         415181   
-- Guilher Depiné           417558
+- Kauan A. Cipriani	      
+- Maria Cecilia	         
+- Vitor H. Konzen	        
+- Guilher Depiné           
