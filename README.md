@@ -86,7 +86,7 @@ public/
 
 ## 👨‍💻 Integrantes do Grupo
 
-- Kauan A. Cipriani	      
-- Maria Cecilia	         
-- Vitor H. Konzen	        
-- Guilher Depiné           
+- Kauan Amélio Cipriani	      
+- Maria Cecilia	Schneider de Oliveira        
+- Vitor Hugo Konzen	        
+- Guilher Depiné Neto           
