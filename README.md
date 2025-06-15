@@ -22,7 +22,7 @@ Este é um projeto simples de lista de tarefas (To-Do List) desenvolvido com PHP
 - Bootstrap 5 (CSS e JS)
 - Codelgniter
 
-##📦 Estrutura de arquivos
+## 📦 Estrutura de arquivos
 ```
 to_dolist/
 app/
@@ -47,7 +47,7 @@ public/
  └─ index.php 
 ```
 
-##🛠 Como rodar o projeto
+## 🛠 Como rodar o projeto
 
 1. Instale o PHP, Composer, e MySQL no seu ambiente.
 2. Clone este repositório:
