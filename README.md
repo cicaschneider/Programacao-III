@@ -4,12 +4,14 @@ Este é um projeto simples de lista de tarefas (To-Do List) desenvolvido com PHP
 
 ## ✨ Funcionalidades
 
-- ✅ Adicionar novas tarefas
-- 📝 Visualizar tarefas em ordem de criação
-- ✔️ Marcar tarefas como concluídas
-- 🗑 Excluir tarefas
-- 🌙 Tema escuro e visual moderno
-- 📱 Layout responsivo para celular
+- ✅ Adicionar novas tarefas com título, descrição e prazo (deadline)
+- 📝 Listar tarefas com filtro por status (pendente ou feita) e busca por texto
+- ✔️ Marcar tarefas como concluídas com um clique
+- 🗑  Excluir tarefas
+- 📅 Exibir datas de criação e prazo formatadas
+- 📱 Layout responsivo e moderno com Bootstrap
+- 🔒 Segurança básica com proteção CSRF nos formulários
+
 
 ## 🚀 Tecnologias Utilizadas
 
@@ -17,43 +19,69 @@ Este é um projeto simples de lista de tarefas (To-Do List) desenvolvido com PHP
 - MySQL
 - HTML5
 - CSS3 (tema escuro + responsivo)
-- Font Awesome (ícones)
+- Bootstrap 5 (CSS e JS)
+- Codelgniter
 
 ##📦 Estrutura de arquivos
 ```
-todo-list/
-│
-├── index.php         → Página principal da lista
-├── add.php           → Script para adicionar tarefa
-├── delete.php        → Script para deletar tarefa
-├── done.php          → Script para marcar como feita
-├── db.php            → Conexão com o banco de dados
-├── style.css         → Estilo da interface
-└── README.md         → Este arquivo
+to_dolist/
+app/
+ ├─ Config/
+ │   └─ Boot/
+ │   └─...
+ ├─ Controllers/
+ │   └─ Task.php        # Controller das tarefas
+ │   ├─BaseController.php
+ │   └─ Home.php
+ ├─ Models/
+ │   └─ TaskModel.php     # Model para interagir com a tabela tasks
+ │   ├─CatrgoryModel.php
+ │   └─.gitkeep
+ ├─ Views/
+ │   └─ task/
+ │       ├─ index.php     # Lista de tarefas (view principal)
+ │       ├─ create.php    # Form para criação de tarefas
+ │       └─ edit.php      # Form para edição de tarefas
+ │   ├─errors/
+public/
+ └─ index.php 
 ```
 
 ##🛠 Como rodar o projeto
 
-1. Instale o XAMPP ou similar
-2. Copie a pasta do projeto para C:\xampp\htdocs\todo-list
-3. Inicie o Apache e MySQL pelo painel do XAMPP
-4. Acesse o phpMyAdmin
-5. Crie o banco de dados:
+1. Instale o PHP, Composer, e MySQL no seu ambiente.
+2. Clone este repositório:
+   ```
+   git clone <url-do-repo>
+   ```
+3. Instale as dependências do CodeIgniter via Composer:
+   ```
+   composer install
+   ```
+4. Configure o banco de dados em app/Config/Database.php com suas credenciais MySQL.
+5. Crie o banco e a tabela executando o SQL:
    ```
    CREATE DATABASE todo_list CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
-   ```
-7. Crie a tabela:
-   ```
+
+   USE todo_list;
+
    CREATE TABLE tasks (
      id INT AUTO_INCREMENT PRIMARY KEY,
      title VARCHAR(255) NOT NULL,
-     is_done TINYINT(1) DEFAULT 0,
-     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+     description TEXT,
+     status ENUM('pending', 'done') DEFAULT 'pending',
+     deadline DATE NULL,
+     created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+     updated_at DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
    );
    ```
-9. Abra no navegador:
+6. Inicie o servidor embutido do PHP para desenvolvimento:
+   ```
+   php spark serve
+   ```
+7. Abra no navegador:
     ```
-    http://localhost/todo-list/
+    http://localhost:8080/task
     ```
 
 ## 👨‍💻 Integrantes do Grupo
