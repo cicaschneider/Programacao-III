@@ -21,7 +21,7 @@ Este é um projeto simples de lista de tarefas (To-Do List) desenvolvido com PHP
 - CSS3 (tema escuro + responsivo)
 - Bootstrap 5 (CSS e JS)
 - Codelgniter
-
+s
 ## 📦 Estrutura de arquivos
 ```
 to_dolist/
