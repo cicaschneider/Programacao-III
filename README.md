@@ -59,7 +59,7 @@ public/
    composer install
    ```
 4. Configure o banco de dados em app/Config/Database.php com suas credenciais MySQL.
-5. Crie o banco e a tabela executando o SQL:
+5. Crie o banco e a tabela executando o SQL: 
    ```
    CREATE DATABASE todo_list CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
 
