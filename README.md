@@ -11,7 +11,7 @@ Este é um projeto simples de lista de tarefas (To-Do List) desenvolvido com PHP
 - 📅 Exibir datas de criação e prazo formatadas
 - 📱 Layout responsivo e moderno com Bootstrap
 - 🔒 Segurança básica com proteção CSRF nos formulários
-
+ 
 
 ## 🚀 Tecnologias Utilizadas
 
