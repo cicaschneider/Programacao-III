@@ -84,11 +84,11 @@ public/
     http://localhost:8080/task
     ```
 8. Links dos vídeos
-   Componente de Programação III:
-   - https://youtu.be/HEVHmQuHDAs
+   - Componente de Programação III:
+     - https://youtu.be/HEVHmQuHDAs
 
-   Componentes de Programação III e Engenharia de Software II:
-   - https://youtu.be/jIympJV2kgY
+   - Componentes de Programação III e Engenharia de Software II:
+     - https://youtu.be/jIympJV2kgY
 
 ## 👨‍💻 Integrantes do Grupo
 
